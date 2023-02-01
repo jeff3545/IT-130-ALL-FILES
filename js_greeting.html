@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Greeting</title>
+
+    <style>
+
+        body {background-color: lavender;
+            font-size: 24px;}
+
+        input {font-size: 24px;}
+
+        div#box1 {position: static;
+            box-sizing: border-box;
+            width: 675px;
+            padding: 25px;
+            border: 3px dashed white;
+            font-size: 32px;
+            background-color: lightblue;}
+
+        div#box2 {position: static;
+            box-sizing: border-box;
+            width: 675px;
+            padding: 25px;
+            background-color: lightgreen;
+            border: 3px dotted green;
+            font-size: 32px;}
+
+        div#box3 {position: static;
+            box-sizing: border-box;
+            width: 675px;
+            padding: 25px;
+            font-size: 32px;
+            text-align: right;}
+
+    </style>
+
+    <script>
+        // write a function to hide box2
+        function hideBox2() {
+            document.getElementById("box2").style.display = "none";
+        }
+        //write a function to disable reset button
+        function disableResetButton() {
+            document.getElementById("resetButton").disabled = true;
+        }
+        // write a function to say hello
+        function sayHello() {
+            // get the value of your name and make it a variable
+            var name = document.getElementById("yourName").value;
+            // show box2
+            document.getElementById("box2").style.display = "block";
+            // write the message in box2
+            document.getElementById("box2").innerHTML = "Hello, <strong>" + name + "</strong>, how are you today?";
+            // hide box1
+            document.getElementById("box1").style.display = "none";
+            // enable resetButton
+            document.getElementById("resetButton").disabled = false;
+            // disable sayHelloButton
+            document.getElementById("sayHelloButton").disabled = true;
+        }
+        // write a function to reset everything
+        function reset() {
+            // set the value of yourName to an empty string
+            document.getElementById("yourName").value = "";
+            // show box1
+            document.getElementById("box1").style.display = "block";
+            // hide box2
+            document.getElementById("box2").style.display = "none";
+            // disable resetButton
+            document.getElementById("resetButton").disabled = true;
+            // enable sayHelloButton
+            document.getElementById("sayHelloButton").disabled = false;
+            // alert message
+            alert("Goodbye!")
+        }
+
+
+
+
+    </script>
+</head>
+<body onload="hideBox2();disableResetButton();">
+    <div id="box1">
+        <label for="yourName">
+            Enter Your Name:
+        </label>
+        <input type="text" size="20" id="yourName">
+
+    </div>
+
+    <div id="box2">
+        The dynamic message will appear here.
+
+    </div>
+
+    <div id="box3">
+        <input type="button" value="Reset" id="resetButton" onclick="reset()">
+        &nbsp;
+        <input type="button" value="Say Hello" id="sayHelloButton" onclick="sayHello()">
+
+    </div>
+
+</body>
+</html>

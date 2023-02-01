@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Form Example </title>
+    </head>
+    <body bgcolor="blue" text="white">
+        
+        <h1>
+            &#127874;
+            Order a Birthday Cake
+            &#128515;
+        </h1>
+
+        <form id="orderForm">
+            <Fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+
+                <label for="yourName">
+                    Your Name:
+                </label>
+
+                <input type="text" size="20" id="yourName" placeholder="Emter Your Name">
+            
+                <br><br>
+
+            <label for="yourEmail">
+                Your Email:
+            </label>
+            <input type="email" size="20" id="yourEmail" placeholder="example@domain.com">
+            
+            <br><br>
+
+            <label for="yourPhone">
+                Your Phone Number:
+            </label>
+            <input type="phone" size="20" id="yourPhone" placeholder="555-555-5555">
+
+            <br><br>
+
+            <label for="pickupDate">
+                Pickup Date:
+            </label>
+
+                <input type="date" id="pickupDate">
+
+            
+            
+            </Fieldset>
+
+            <fieldset>
+
+                <legend>
+                    Design Your Cake
+                </legend>
+
+                <p>
+                    Pick a Shape
+                </p>
+
+                <input type="radio" name="shape" id="circle" value="circle">
+                <label for="circle">
+                    Circle &#9679;
+                </label>
+
+                <br>
+
+                <input type="radio" name="shape" id="rectangle" value="rectangle">
+                <label for="rectangle">
+                    Rectangle &#9646;
+                </label>
+
+                <br>
+
+                <input type="radio" name="shape" id="square" value="square">
+                <label for="square">
+                    Square &#9632;
+                </label>
+
+                <br>
+
+                <input type="radio" name="shape" id="heart" value="heart">
+                <label for="heart">
+                    Heart &hearts;
+                </label>
+
+                <br><br>
+
+                <label for="layers">
+                    How Many Layers?
+                </label>
+
+                <select id="layers">
+                    <option value="1">
+                        One Layers
+                    </option>
+                    <option value="2">
+                        Two Layers
+                    </option>
+                    <option value="3">
+                        Three Layers
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="flavor">
+                    Pick a Flavor:
+                </label>
+
+                <input list="flavor">
+                <datalist id="flavor">
+                    <option value="Black Forest Cake">
+                    <option value="Cheesecake">
+                    <option value="Chocolate Cake">
+                    <option value="Funfetti">
+                    <option value="Lemon Cake">
+                    <option value="Pound Cake">
+                    <option value="Red Velvet Cake">
+                    <option value="Strawberry Cake">
+                    <option value="Yellow/Vanilla Cake">
+                </datalist>
+
+                <br><br>
+
+                <label for="frostingColor">
+                    Pick a Frosting Color:
+                </label>
+
+                <input type="color" id="frostingColor" value="#ffffff">
+
+                <br><br>
+
+                <p>Pick Toppings:
+                </p>
+
+                <input type="checkbox" id="cherries" value="cherries">
+                <label for="cherries">
+                    Cherries
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="sprinkles" value="sprinkles">
+                <label for="sprinkles">
+                    Sprinkles
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="whippedCream" value="whippedCream">
+                <label for="whippedCream">
+                    Whipped Cream
+                </label>
+
+                <br><br>
+
+                <label for="message">
+                    What Message Do You Want On The Cake?
+                </label>
+
+                <br>
+
+                <textarea name="message" cols="30" rows="5" placeholder="Happy Birthday!"></textarea>
+            
+                <br><br>
+
+                <label for="candles">
+                    How Many Candles?
+                </label>
+            
+                <input type="number" min="0" max="100" value="1" id="candles">
+
+                <br><br>
+
+                <input type="reset" value="Clear Form">
+
+                <input type="Submit" value="Order Cake" onclick="alert('Thank you for your order! ');">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </fieldset>
+
+
+
+        </form>
+
+    </body>

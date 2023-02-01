@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Layout 3</title>
+        <style>
+
+            body {background-color: purple;}
+
+            div#container {position: static;
+                    box-sizing: border-box;
+                    background-color: yellow;
+                    width: 600px;
+                    height: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+                    border-top-right-radius: 50px;}
+
+            header{position: static;
+                box-sizing: border-box;
+                background-color: orange;
+                width: 600px;
+                height: 100px;
+                border-top-right-radius: 50px;
+                padding-top: 20px;
+                background-image: url(racoon.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0px -10px ;}
+
+            nav {position: static;
+                box-sizing: border-box;
+                background-color: pink;
+                width: 150px;
+                height: 450px;
+                padding-left: 10px;
+                padding-right: 10px;
+                float: left;}
+
+            article {position: static;
+                box-sizing: border-box;
+                background-color: white;
+                width: 450px;
+                height: 450px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                float: left;
+                overflow: auto;}
+
+            footer {position: static;
+                    box-sizing: border-box;
+                    background-color: coral;
+                    width: 600px;
+                    height: 50px;
+                    /*use this to bump non-floated box to next line */
+                    clear: both;
+                    text-align: center;
+                    padding-top: 10px;}
+
+            @font-face {
+                font-family:my_font ;
+                src: url(arcadeclassic.ttf);
+            }        
+
+            h1 {margin-top: 0px;
+                margin-bottom: 0px;
+                text-align: center;
+                font-size: 40px;
+                color: white;
+                text-shadow: 2px 2px 0px black;
+                font-family: my_font;
+                word-spacing: 6px;
+                letter-spacing: 3px;}
+
+            h2 {margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: Arial narrow;
+                color: black;
+                word-spacing: 1px;}
+
+            p {font-family: arial;
+                font-size: 16px;
+                line-height: 22px;
+                text-indent: 30px;}
+
+            small {font-family: arial;
+                font-size: 30px;
+                color: navy;}
+
+            a {font-family: arial;
+                font-size: 22px;
+                line-height: 32px;}
+
+            a:link {color: red;}
+
+            a:visited {color: red;}
+            
+            a:hover {color: green;
+                    text-decoration: none;
+                    font-size: 26px;
+                    }
+
+            a:active {font-style: italic;
+                     text-decoration: line-through;
+                     color: darkgreen;}
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="container">
+            <header>
+                <h1>This is My Webpage</h1>
+            </header>
+            <nav>
+                <a href="#">Link 1</a>
+                <br>
+                <a href="#">Link 2</a>
+                <br>
+                <a href="#">Link 3</a>
+            </nav>
+            <article>
+                <h2>This is the Main Content Area</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo eu justo mattis ornare. Nam tempor vitae lacus at lacinia. Nam auctor fringilla diam, a tincidunt ligula varius sit amet. Donec at justo dictum, gravida mi et, mattis velit. Pellentesque tempus turpis quis diam dapibus hendrerit. Donec vestibulum velit neque, ut interdum nisl placerat nec. Proin at mollis mauris. Vestibulum tellus nulla, blandit vitae luctus sit amet, consequat non orci. Nunc ut auctor mauris. Ut commodo eros a sem commodo, quis mollis massa ultrices. Sed et tellus at eros vulputate ultrices ut pharetra magna.</p>
+
+<p>lacus ante, lacinia et tellus vel, scelerisque rutrum felis. Duis lacinia, purus eget venenatis hendrerit, magna mauris auctor diam, sit amet porttitor dolor augue nec massa. Donec nec malesuada elit, sed sagittis arcu. Curabitur quis elit non quam congue faucibus sed ut est. Phasellus vitae lacus non lectus volutpat suscipit et at erat. Vestibulum a orci ultricies, sagittis est vel, lacinia metus. Proin bibendum viverra tellus eu feugiat. Etiam tristique, est ut facilisis vehicula, sem nisi vulputate nisi, eget porttitor neque libero ac nibh.</p>
+
+<p>Praesent at metus euismod, viverra dolor a, placerat metus. Aenean maximus varius justo, vel venenatis metus mattis vel. Fusce congue augue sed neque auctor, vitae iaculis diam cursus. Suspendisse in eros ac nibh posuere faucibus in sed diam. Vestibulum in velit nec quam pretium fermentum vel sed justo. Mauris ut sodales est, in mattis tellus. Morbi quis dolor at sapien elementum aliquet. Aliquam sed diam sodales, laoreet velit ut, cursus odio. Vestibulum convallis, eros in viverra pharetra, nisl lectus cursus arcu, in hendrerit mauris dolor vitae nisl. Integer in ex non libero egestas sodales. Duis sollicitudin quis risus et placerat. Suspendisse ultricies mi ac semper porttitor. Proin feugiat sodales nisl, vitae blandit ipsum hendrerit eu.</p>
+
+<p>Nam ullamcorper mauris rhoncus porttitor tincidunt. Praesent in ligula in nibh blandit aliquet. Suspendisse efficitur risus dictum tortor euismod, non maximus sem eleifend. Nulla facilisi. Phasellus sed sem mollis, vehicula odio vel, lacinia dui. Aenean ornare tempor eros, ullamcorper varius neque fringilla a. Etiam gravida lacus in bibendum dictum. Proin commodo hendrerit nunc nec scelerisque.</p>
+
+<p>Fusce ornare, libero ultricies fermentum tempus, dolor magna tincidunt ipsum, ac convallis felis neque a tortor. In dictum magna quis neque mollis, sed vestibulum purus tempor. Pellentesque lorem tellus, eleifend nec tincidunt a, semper vel felis. Curabitur suscipit mi nec neque tempus, aliquet vehicula neque pulvinar. Praesent in malesuada tortor, a sollicitudin erat. Donec sed neque nec turpis rutrum feugiat. Maecenas facilisis, lectus vitae sodales convallis, ante arcu ultrices sapien, in sodales libero libero ac enim. Vestibulum in aliquam erat, sit amet ultrices mauris. Cras dignissim blandit dui, a sodales lorem pharetra vitae.</p>
+
+
+
+
+
+
+
+
+            </article>
+            <footer></footer>
+        </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Positioning 2</title>
+
+        <style>
+
+        @media
+        only screen and (max-width: 768px) {
+        /* For mobile phones: */
+         [class*="col-"] {
+        width: 100%;
+        }
+        }
+
+            @font-face {
+                font-family: basketball;
+                src: url(Basketball.otf);
+            }
+
+            body {background-color: #c9082a;
+                  background-image: linear-gradient(225deg, #c9082a 0%, #ffffff 50%, #17408b 100%);}
+
+            div {box-sizing: border-box;
+                font-size: 40px;
+                font-family: comic sans ms;
+                padding: 10px;
+                text-align: center;}
+            
+                div#container {position: relative;
+                           background-color: white;
+                           height: 1000px;
+                           width: 1500px;
+                           border: 10px solid black;
+                           margin-left: auto ;
+                           margin-right: auto;
+                           top: 100px;
+                           z-index: 100;}
+
+                           div#one {position: absolute;
+                      background-color: rgba(255, 165, 0, 0.0);
+                      height: 400px;
+                      width: 400px;
+                      top: 50px;
+                      left: 545px;
+                      z-index: 11;
+                      color: black;
+                      background-image: url(bulls.png);
+                      }
+                           
+                           div#two {position: absolute;
+                      background-color: rgba(255, 165, 0, 0.0); ;
+                      height: 400px;
+                      width: 400px;
+                      top: 100px;
+                      right: 300px;
+                      z-index: 10;
+                      color: black;
+                      background-image: url(trophies.png);
+                      }
+
+                           div#three {position: absolute;
+                        background-color: rgba(255, 165, 0, 0.0);;
+                    height: 400px;
+                    width: 400px;
+                    top: 100px;
+                    left: 300px;
+                    z-index: 10;
+                    color: black;
+                    background-image: url(trophies.png);
+                   }
+
+                           div#four {position: fixed;
+                        background-color: rgba(255, 165, 0, 0.0);;
+                    height: 400px;
+                    width: 400px;
+                    top: 300px;
+                    left: 200px;
+                    z-index: 1;
+                    color: black;
+                    transform: rotate(270deg);
+                    font-family: basketball;
+                    font-size: 60px;
+                    }
+
+                           div#five {position: fixed;
+                        background-color: rgba(255, 165, 0, 0.0);;
+                    height: 400px;
+                    width: 400px;
+                    top: 300px;
+                    right: 200px;
+                    z-index: 1;
+                    color: black;
+                    transform: rotate(90deg);
+                    font-family: basketball;
+                    font-size: 60px;}
+
+                    div#six {position: absolute;
+                      background-color: rgba(255, 165, 0, 0.0); ;
+                      height: 400px;
+                      width: 500px;
+                      bottom: 100px;
+                      right: 500px;
+                      z-index: 10;
+                      color: black;
+                      font-family: basketball
+                      }
+
+                           
+
+                
+
+
+                           
+
+            
+
+        </style>
+
+
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="one">
+                
+                </div>
+                <div id="two">
+                
+                </div>
+                <div id="three">
+                
+                </div>
+                <div id="four">
+                1991-1992-1993
+                </div>
+                <div id="five">
+                1996-1997-1998
+                </div>
+                <div id ='six'>
+                    the chicago bulls are a beloved nba franchise. this love comes from michael jordan who brought chicago a total of six championships. current nba players such as derrick rose and anthony davis who are from chicago fell in love with the game because of the bulls and michael.
+                </div>
+        </div>
+    </body>
+
+
+</html>
